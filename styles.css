@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100%;
+}
+
+.parent {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card {
+  height: 350px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.product-image img {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.product-content {
+  display: flex;
+  background-color: white;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+  align-items: stretch;
+  padding: 20px;
+  text-align: left;
+  object-position: 50px;
+  z-index: 9;
+  transform: translateX(-15px)
+}
+
+.product-type {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.product-name {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.product-descritpion{
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.price-row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.product-msrp {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', serif;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.product-button {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4%;
+}
+
+.product-button:hover {
+  opacity: .7;
+  cursor: pointer;
+}
