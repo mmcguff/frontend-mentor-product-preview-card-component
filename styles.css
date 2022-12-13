@@ -31,6 +31,7 @@ body {
 .product-content {
   display: flex;
   background-color: white;
+
   width: 50%;
   flex-direction: column;
   justify-content: space-evenly;
@@ -100,4 +101,36 @@ body {
 .product-button:hover {
   opacity: .7;
   cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+  .product-image {
+    transform: translateY(100px) translateX(60px);
+    align-items: stretch;
+  }
+
+  .product-image img {
+    object-fit: fill;
+    width:100%;
+    height:auto;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.product-content {
+  transform: translateY(-50px) translateX(60px);
+  width: 100%;
+}
+
+  .product-card{
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .attribution {
+    display: none;
+  }
 }
